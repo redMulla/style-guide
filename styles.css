@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+header{
+    background: rgba(78, 78, 78, 0.85);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #C0C0C0;
+}
+ 
+label.logo {
+    color: white;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+div.a-bars {
+    float: right;
+    margin-top: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+div.bars{
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    border-radius: 10px;
+}
+
+a:hover{
+    background: rgb(161, 157, 157);
+    transition: .5s;
+}
+
+@media (max-width: 1048px) {
+    label.logo{
+        font-size: 32px;
+        padding-left: 60px;
+    }
+    nav ul {
+        margin-right: 20px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 700px) {
+    nav .a-bars {
+        display: block;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(124, 120, 120, 0.8);
+        top: 80px;
+        left: -150%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav a{
+        font-size: 20px;
+    }
+    a:hover{
+        border: none;
+        color: rgb(92, 92, 92);
+    }
+    nav ul.show{
+        left: 0;
+    }
+    .colors div{
+        width: 150px;
+        height: 100px;
+        display: inline-block;
+        padding: 15px 20px;
+        border-radius: 10px;
+    }
+}
+
+main{
+    margin-top: 80px;
+}
+
+.boss {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.colors{
+    height: 300px;
+    border: 2px none black;
+    margin: 20px 10%;
+    overflow: scroll;
+    background-image: url("colorBackground.jfif");
+}
+
+.colors h2 {
+    color: rgb(218, 255, 11);
+    font-size: 40px;
+    text-align: center;
+}
+
+.colors div{
+    height: 100px;
+    width: 200px;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 20px 15px;
+    border-radius: 10%;
+}
+
+div.silver {
+    background: #C0C0C0;
+}
+
+div.gray {
+    background: #808080;
+}
+
+div.aqua {
+    background: #0FF;
+}
+
+div.lime {
+    background: #0F0;
+}
+
+div.navy{
+    background: #000080;
+    color: azure;
+}
+
+div.olive {
+    background: #808000;
+}
+
+div.teal{
+    background: #008080;
+}
+
+div.fuchsia{
+    background: #F0F;
+}
+
+div.red {
+    background: #F00;
+}
+
+div.cool-blue{
+    background: #2d5dcc;
+}
+
+div.pink {
+    background: #d957d9;
+}
+
+div.mint-green {
+    background: #efd9ca;
+}
+
+.fonts h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+div.fonts{
+    height: 400px;
+    border: 2px solid black;
+    margin: 40px 10%;
+    overflow: scroll;
+    background-image: url("typeFaceBG.jpg");
+    color: #fff;
+}
+
+.fonts div{
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px 15px;
+}
+
+.fonts h3 {
+    text-decoration: underline;
+}
+
+div.open-sans {
+    font-family: "Open Sans";
+}
+
+div.lato {
+    font-family: Lato;
+}
+
+div.nunito-sans {
+    font-family: "Nunito Sans";
+}
+
+div.fira-sans {
+    font-family: "Fira Sans";
+}
+
+div.barlow {
+    font-family: Barlow;
+}
+
+div.text-type {
+    margin: 20px 10%;
+    background-color: white;
+    color: rgb(53, 53, 53);
+    padding: 20px;
+}
+
+.text-type h2 {
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(77, 77, 77);
+}
+
+.text-type li {
+    padding-left: 30px;
+}
+
+.h1 h1{
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.h2 h2 {
+    text-align: left;
+    font-family: Lato;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.para p {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+footer {
+    background: rgba(78, 78, 78, 0.85);
+    height: 80px;
+    width: 100%;
+}
+
+footer p {
+    color: rgb(223, 223, 223);
+    float: right;
+    padding: 30px 20px;
+    text-decoration: underline;
+    font-style: italic;
+    font-size: 300;
+}

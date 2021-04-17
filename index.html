@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Style Guide</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,700;1,400&family=Fira+Sans:ital,wght@0,400;0,700;1,400&family=Lato:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.a-bars').click(function(){
+                $('ul').toggleClass('show');
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <label class="logo">Style Guide</label>
+            <ul>
+                <li><a class="act" href="#colors">Colors</a></li>
+                <li><a href="#fonts">Fonts</a></li>
+                <li><a href="#text-style">Text Style</a></li>
+            </ul>
+            <div class="a-bars">
+                <div class="bars"></div>
+                <div class="bars"></div>
+                <div class="bars"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="boss">Website Style Guide</h1>
+        <div class="colors" id="#colors">
+            <h2>Colors</h2>
+            <div class="silver">
+                <p>Silver</p>
+                <p>#C0C0C0</p>
+            </div>
+            <div class="gray">
+                <p>Gray</p>
+                <p>#808080</p>
+            </div>
+            <div class="aqua">
+                <p>Aqua</p>
+                <p>#0FF</p>
+            </div>
+            <div class="lime">
+                <p>Lime</p>
+                <p>#0F0</p>
+            </div>
+            <div class="navy">
+                <p>Navy</p>
+                <p>#000080</p>
+            </div>
+            <div class="olive">
+                <p>Olive</p>
+                <p>#808000</p>
+            </div>
+            <div class="teal">
+                <p>Teal</p>
+                <p>#008080</p>
+            </div>
+            <div class="fuchsia">
+                <p>Fuchsia</p>
+                <p>#FF00FF</p>
+            </div>
+            <div class="red">
+                <p>Red</p>
+                <p>#FF0000</p>
+            </div>
+            <div class="cool-blue">
+                <p>Cool Blue</p>
+                <p>#2d5dcc</p>
+            </div>
+            <div class="pink">
+                <p>Pink</p>
+                <p>#d957d9</p>
+            </div>
+            <div class="mint-green">
+                <p>Mint Green</p>
+                <p>#efd9ca</p>
+            </div>
+        </div>
+
+        <div class="fonts" id="#fonts">
+            <h2>Fonts</h2>
+            
+            <div class="open-sans">
+                <h3>Open Sans</h3>
+                <p>The quick brown fox jumps over the lazy dog <br> <strong>The quick brown fox jumps over the lazy dog</strong> <br> <em>The quick brown fox jumps over the lazy dog</em></p>
+            </div>
+            <div class="lato">
+                <h3>Lato</h3>
+                <p>The quick brown fox jumps over the lazy dog <br> <strong>The quick brown fox jumps over the lazy dog</strong> <br> <em>The quick brown fox jumps over the lazy dog</em></p>
+            </div>
+            <div class="nunito-sans">
+                <h3>Nunito Sans</h3>
+                <p>The quick brown fox jumps over the lazy dog <br> <strong>The quick brown fox jumps over the lazy dog</strong> <br> <em>The quick brown fox jumps over the lazy dog</em></p>
+            </div>
+            <div class="fira-sans">
+                <h3>Fira Sans</h3>
+                <p>The quick brown fox jumps over the lazy dog <br> <strong>The quick brown fox jumps over the lazy dog</strong> <br> <em>The quick brown fox jumps over the lazy dog</em></p>
+            </div>
+            <div class="barlow">
+                <h3>Barlow</h3>
+                <p>The quick brown fox jumps over the lazy dog <br> <strong>The quick brown fox jumps over the lazy dog</strong> <br> <em>The quick brown fox jumps over the lazy dog</em></p>
+            </div>
+        </div>
+
+        <div class="text-type">
+            <h2>Text Style</h2><br><br>
+            <div class="h1">
+                <h1>H1: Main page heading</h1><br>
+                <ul>
+                    <li>Font-weight: 700 (bold)</li>
+                    <li>Font-size: 26px</li>
+                    <li>Font-family: Open Sans</li>
+                </ul><br><br>
+            </div>
+            <div class="h2">
+                <h2>H2: Subheading</h2><br>
+                <ul>
+                    <li>Font-weight: 500</li>
+                    <li>Font-size: 18px</li>
+                    <li>Font-family: Lato</li>
+                </ul><br><br>
+            </div>
+            <div class="para">
+                <p>P: Paragraph text</p><br>
+                <ul>
+                    <li>Font-weight: 400 (regular)</li>
+                    <li>Font-size: 14px</li>
+                    <li>Font-family: Lato</li>
+                </ul><br>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>©Vassilly Ibinkwiye</p>
+    </footer>
+</body>
+</html>
